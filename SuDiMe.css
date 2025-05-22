@@ -1,0 +1,25 @@
+.sudime-container {
+  margin-top: 120px; /* spazio sotto la navbar */
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 40px;
+  background-color: #d1d47e;
+  border-radius: 10px;
+  font-family: "Cormorant Garamond", serif;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sudime-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #222;
+}
+
+.sudime-container p {
+  line-height: 1.6;
+  font-size: 20px;
+  margin-bottom: 15px;
+}

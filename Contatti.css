@@ -1,0 +1,26 @@
+.contatti-container {
+  padding: 20px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.contatti-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contatti-list li {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.icon {
+  color: #0077b5; /* colore linkedin o azzurro */
+  font-size: 1.4rem;
+}

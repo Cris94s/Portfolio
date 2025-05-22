@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  background-color: #f9f9f9;
+  font-family: 'Cormorant Garamond', serif;
+  color: #222;
+  padding-top: 80px;
+}
+
+.home-section {
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 80px); /* sottrae l'altezza della navbar */
+  display: flex;
+  flex-direction: column; /* da riga a colonna per h2 + p */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.home-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Titolo h2 */
+.welcome-title {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 25px;
+  color: #000000;
+  font-style: italic;
+  max-width: 800px;
+  animation: slideInFromRight 0.8s ease forwards;
+  z-index: 2;
+  line-height: 1.1;
+}
+
+/* Paragrafo sotto titolo */
+.welcome-paragraph {
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 600;
+  color: #222222;
+  max-width: 800px;
+  text-align: justify;
+  animation: slideInFromRight 1s ease forwards;
+  z-index: 2;
+  line-height: 1.5;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;  /* margine verticale rimosso come indicato */
+  padding: 0 20px;
+}
+
+html, body {          /* messo per non lasciare spazio extra */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenitore principale che occupa tutta l'altezza */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;                  /* altezza minima 100% viewport quindi l'area visibile del web o browser :DDD*/
+}
+
+/* Contenuto principale che prende tutto lo spazio disponibile */
+.content-container,
+.home-section {
+  flex: 1 0 auto;     /* prende tutto lo spazio disponibile */
+}
+
+footer.footer {
+  flex-shrink: 0; /* evita che il footer si riduca */
+}

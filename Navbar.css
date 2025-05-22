@@ -1,0 +1,111 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 40px;
+  background-color: #222;
+  color: white;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* ombra del box */
+}
+
+.navbar-name-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.navbar-name {
+  font-size: 28px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 6px;
+}
+
+.nav-link:hover {
+  background-color: #555;
+  color: #ddd;
+}
+
+.cv-download {
+  color: white;
+  padding: 10px 15px;
+  background-color: #144273;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.cv-download:hover {
+  background-color: #49627c;
+}
+
+.navbar-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.navbar-photo:hover {
+  transform: scale(1.1);
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.home-button {
+  margin-right: 150px;
+  color: rgb(187, 25, 25);
+}

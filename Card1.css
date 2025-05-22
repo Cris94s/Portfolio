@@ -1,0 +1,36 @@
+.card1-container {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.60);
+  overflow: hidden;
+}
+
+.card1-container h2 {
+  color: rgb(24, 24, 98);
+}
+
+
+.card1-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(172, 11, 11, 0.60); /*aggiunto l'ombra al passsaggio del mouse */
+}
+.card1-container::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(255, 255, 255, 0.789); /* Overlay scuro */
+  z-index: 0;
+}
+
+.card1-container > * {
+  position: relative;
+  z-index: 1;
+}
